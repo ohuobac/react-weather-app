@@ -1,38 +1,50 @@
-.App {
+body {
+  background: center/100%
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/426/original/pexels-james-wheeler-1486974.jpg?1667554960");
+  opacity: 0.8;
+}
+
+h1 {
   text-align: center;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li::first-letter {
+  text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+h1::first-letter {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  width: 100%;
+  max-width: 850px;
+  height: 450px;
+  margin: 100px auto;
+  padding: 30px 60px;
+  border-radius: 10px;
+  background: #fce6dc;
+  color: #6f4785;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.row {
+  display: block;
+  flex-wrap: wrap;
 }
