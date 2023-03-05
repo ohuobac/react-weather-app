@@ -14,7 +14,7 @@ export default function Weather() {
   };
   return (
     <div className="weather">
-      <div className="main-container">
+      <div className=" container main-container">
         <div className="all-forcast">
           <div className="row justify-content-evenly">
             <div className="col-4 current-day">
