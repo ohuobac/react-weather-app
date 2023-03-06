@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "./weather.css";
 
 export default function Weather() {
   let weatherData = {
@@ -99,27 +98,6 @@ export default function Weather() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="link">
-            <small className="weather-app-wrapper">
-              <a
-                href="https://github.com/ohuobac/My-Awesome-Weather-App"
-                target="_blank"
-                rel="noreferrer"
-                text-decoration="none"
-              >
-                Open-source code{" "}
-              </a>
-              by Chika Ohuoba
-              <a
-                href="https://dreamy-cassata-7a104d.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-                text-decoration="none"
-              >
-                Hosted on Netlify
-              </a>
-            </small>
           </div>
         </div>
       </div>
