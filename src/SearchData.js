@@ -1,5 +1,6 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function SearchData(props) {
   return (
@@ -7,12 +8,8 @@ export default function SearchData(props) {
       <div className="d-flex justify-content-between forcast mb-3">
         <div className="current-temp">
           <span>{Math.round(props.data.temperature)}°C </span>
-          <img
-            src={props.data.icon}
-            alt={props.data.description}
-            width="75"
-            className="icon-className"
-          />{" "}
+          <WeatherIcon code={props.data.icon} alt={props.data.description} />
+
           <br />
           <span className="text-capitalize">{props.data.description}</span>
         </div>

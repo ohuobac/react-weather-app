@@ -20,7 +20,7 @@ export default function App(props) {
       description: response.data.weather[0].description,
       city: response.data.name,
       country: response.data.sys.country,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
   function searchInfo() {
