@@ -1,7 +1,7 @@
 body {
   color: aliceblue;
   background: center/150%
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/519/original/paris-night-sky-wallpaper.jpg?1677662139");
+    url("https://source.unsplash.com/1600x900/?nature,weather");
   backdrop-filter: blur(10px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@ h1 {
   border: 2px solid aliceblue;
   border-radius: 10px;
   background: center/200%
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/519/original/paris-night-sky-wallpaper.jpg?1677662139");
+    url("https://source.unsplash.com/1600x900/?nature,weather");
   background-size: cover;
   max-width: 800px;
   margin-left: 270px;

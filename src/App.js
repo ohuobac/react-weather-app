@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import SearchData from "./SearchData";
+import UnitConversion from "./UnitConversion";
+import Loading from "./Loading";
 import "./App.css";
 import "./weather.css";
 
@@ -46,16 +48,7 @@ export default function App(props) {
             <SearchData data={weatherData} />
           </div>
           <div className="d-flex justify-content-between">
-            <div>
-              <button className="btn btn-primary">
-                <a href="/" className="active text-white ">
-                  °C /{" "}
-                </a>
-                <a href="/" className=" text-white">
-                  °F
-                </a>
-              </button>
-            </div>
+            <UnitConversion celcius={weatherData.temperature} />
 
             <form className="row g-3 form" onSubmit={handleSubmit}>
               <div className="col-6">
@@ -84,6 +77,6 @@ export default function App(props) {
     );
   } else {
     searchInfo();
-    return "Loading...";
+    return <Loading />;
   }
 }
