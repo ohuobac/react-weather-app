@@ -17,10 +17,6 @@
   margin: 0px auto;
 }
 
-.location {
-  margin-bottom: 0px;
-}
-
 .days {
   text-align: center;
   font-weight: 300px;
@@ -43,13 +39,13 @@
 
 .units {
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   margin-top: 6px;
-  padding-left: 6px;
+  padding-left: 0px;
   vertical-align: top;
   font-weight: bold;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 
 .units a {

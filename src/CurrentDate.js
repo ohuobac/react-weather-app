@@ -38,7 +38,7 @@ export default function CurrentDate(props) {
   let currentMonth = month[props.dateNow.getMonth()];
 
   return (
-    <div className="mt-0 pt-0 mb-0 pb-0">
+    <div className=" current-date mt-0 pt-0 mb-0 pb-0">
       {currentDay}, {date} {currentMonth} <br />
       {hour}:{min} {time}
     </div>

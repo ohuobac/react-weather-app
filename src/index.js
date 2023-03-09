@@ -21,7 +21,7 @@ root.render(
         </a>{" "}
         by Chika Ohuoba{" "}
         <a
-          href="https://cozy-granita-ac43cf.netlify.app/"
+          href="https://gleeful-cannoli-b65da1.netlify.app/"
           target="_blank"
           rel="noreferrer"
           text-decoration="none"

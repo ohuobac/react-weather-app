@@ -37,6 +37,7 @@ h1 {
   margin-bottom: 80px;
   margin-top: 30px;
   color: #ffcd6b;
+  font-size: 24px;
 }
 
 button {
@@ -68,10 +69,51 @@ h1::first-letter {
 }
 
 @media (max-width: 900px) {
+  body {
+    height: 110vh;
+  }
   .app-body {
     margin-left: 50px;
   }
   .forcast-border {
     border-left: 0px solid aliceblue;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .forcast {
+    font-size: 20px;
+  }
+  .search-form {
+    margin-left: 10px;
+  }
+  .input {
+    width: 130px;
+  }
+
+  .search-input {
+    margin-left: 60px;
+  }
+
+  .forcast-toggle {
+    padding-left: 50px;
+  }
+
+  .unit-toggle {
+    padding: 0px;
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .current-temp {
+    font-size: 24px;
+    margin-left: -20px;
+  }
+  .current-date {
+    font-size: 20px;
+  }
+
+  ul {
+    margin-top: 20px;
   }
 }

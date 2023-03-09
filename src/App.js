@@ -48,13 +48,14 @@ export default function App(props) {
             <SearchData data={weatherData} />
           </div>
           <div className="d-flex justify-content-between">
-            <UnitConversion celcius={weatherData.temperature} />
-
-            <form className="row g-3 form" onSubmit={handleSubmit}>
+            <div>
+              <UnitConversion celcius={weatherData.temperature} />
+            </div>
+            <form className="row g-3 form search-form" onSubmit={handleSubmit}>
               <div className="col-6">
                 <input
                   type="search"
-                  className="form-control shadow-sm w-200"
+                  className="form-control shadow-sm w-200 input"
                   placeholder="Enter a city..."
                   autofocus="on"
                   autocomplete="off"
@@ -65,12 +66,12 @@ export default function App(props) {
                 <input
                   type="submit"
                   value="Search"
-                  className="form-control btn btn-primary shadow-sm w-50"
+                  className=" search-input form-control btn btn-primary shadow-sm w-50"
                 />
               </div>
             </form>
 
-            <span>Forcast toggle</span>
+            <span className="forcast-toggle">Forcast toggle</span>
           </div>
         </div>
       </div>

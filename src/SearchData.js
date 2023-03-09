@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
+import "./weather.css";
 
 export default function SearchData(props) {
   return (
@@ -13,11 +14,12 @@ export default function SearchData(props) {
           <br />
           <span className="text-capitalize">{props.data.description}</span>
         </div>
+
         <div className="forcast-border"></div>
         <div>
           Mon <br /> icon
           <br />
-          36°C
+          36<span>°C</span>
         </div>
         <div className="forcast-border"></div>
         <div>
