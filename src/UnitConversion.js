@@ -3,32 +3,54 @@ import "./weather.css";
 
 export default function UnitConversion(props) {
   const [unit, setUnit] = useState(props.celcius);
-  function showFarenheit(event) {
+
+  function showFahrenheit(event) {
     event.preventDefault();
-    setUnit((props.celcius * 9) / 5 + 32);
+    setUnit("fahrenheit");
   }
 
   function showCelcius(event) {
     event.preventDefault();
-    setUnit(props.celcius);
+    setUnit("celcius");
   }
 
-  return (
-    <div>
-      <span>{Math.round(unit)}°</span>
+  function fahrenheit() {
+    return (props.celcius * 9) / 5 + 32;
+  }
 
-      <button className="btn btn-primary">
-        <a href="/" className="link text-white fw-bold" onClick={showCelcius}>
-          °C |{" "}
-        </a>
-        <a
-          href="/"
-          className=" link text-white fw-bold"
-          onClick={showFarenheit}
-        >
-          °F
-        </a>
-      </button>
-    </div>
-  );
+  if (unit === "celcius") {
+    return (
+      <div>
+        <span>{Math.round(props.celcius)}°</span>
+
+        <button className="btn btn-primary">
+          <span>°C |</span>{" "}
+          <a
+            href="/"
+            className="unit-color link  fw-bold"
+            onClick={showFahrenheit}
+          >
+            °F
+          </a>
+        </button>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <span>{Math.round(fahrenheit())}°</span>
+
+        <button className="btn btn-primary">
+          <a
+            href="/"
+            className="unit-color link  fw-bold"
+            onClick={showCelcius}
+          >
+            °C{" "}
+          </a>
+          <span>| °F</span>
+        </button>
+      </div>
+    );
+  }
 }

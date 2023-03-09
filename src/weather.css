@@ -56,6 +56,9 @@
   text-decoration: none;
 }
 
+.unit-color {
+  color: #ffcd6b;
+}
 .current-temp .active {
   cursor: default;
   color: #6f4785;
