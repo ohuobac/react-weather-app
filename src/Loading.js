@@ -1,9 +1,11 @@
 import React from "react";
 import { RotatingLines } from "react-loader-spinner";
 
+import "./App.css";
+
 export default function Loading() {
   return (
-    <div className="mt-5 pt-5 mb-5 pb-5 text-center">
+    <div className="loading text-center  bg-dark">
       <RotatingLines
         strokeColor="#ffcd6b"
         strokeWidth="5"
@@ -12,7 +14,7 @@ export default function Loading() {
         visible={true}
       />
       <br />
-      <div>Loading...</div>
+      <div className="mt-2 pt-2 fw-bold">Loading...</div>
     </div>
   );
 }

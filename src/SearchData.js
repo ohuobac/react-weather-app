@@ -2,49 +2,52 @@ import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
 import "./weather.css";
+import "./App.css";
 
 export default function SearchData(props) {
   return (
     <div className="SearchData">
       <div className="d-flex justify-content-between forcast mb-3">
         <div className="current-temp">
-          <span>{Math.round(props.data.temperature)}°C </span>
+          <span>{Math.round(props.data.temperature)}° </span>
           <WeatherIcon code={props.data.icon} alt={props.data.description} />
 
           <br />
-          <span className="text-capitalize">{props.data.description}</span>
+          <span className="text-capitalize current-description">
+            {props.data.description}
+          </span>
         </div>
 
         <div className="forcast-border"></div>
         <div>
           Mon <br /> icon
           <br />
-          36<span>°C</span>
+          36<span>°</span>
         </div>
         <div className="forcast-border"></div>
         <div>
           Tue <br /> icon
           <br />
-          37°C
+          37°
         </div>
         <div className="forcast-border"></div>
 
         <div>
           Wed <br /> icon
           <br />
-          36°C
+          36°
         </div>
         <div className="forcast-border"></div>
         <div>
           Thur <br /> icon
           <br />
-          36°C
+          36°
         </div>
         <div className="forcast-border"></div>
         <div>
           Fri <br /> icon
           <br />
-          37°C
+          37°
         </div>
       </div>
 

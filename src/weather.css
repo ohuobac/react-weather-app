@@ -65,6 +65,9 @@
   font-weight: 700px;
   font-size: 36px;
 }
+.current-description {
+  font-size: 24px;
+}
 
 .link {
   text-align: right;

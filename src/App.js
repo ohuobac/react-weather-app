@@ -56,7 +56,7 @@ export default function App(props) {
                 <input
                   type="search"
                   className="form-control shadow-sm w-200 input"
-                  placeholder="Enter a city..."
+                  placeholder="Enter city"
                   autofocus="on"
                   autocomplete="off"
                   onChange={updateCity}

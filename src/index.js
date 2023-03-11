@@ -9,8 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App defaultCity={"Lagos"} />
-    <footer className="link text-center">
-      <small className="weather-app-wrapper">
+    <footer className="link text-center mb-0 pb-0">
+      <small className="weather-app-wrapper mb-0 pb-0">
         <a
           href="https://github.com/ohuobac/react-weather-app"
           target="_blank"
@@ -19,7 +19,7 @@ root.render(
         >
           Open-source code{" "}
         </a>{" "}
-        by Chika Ohuoba{" "}
+        <span className="text-dark">by Chika Ohuoba</span>{" "}
         <a
           href="https://gleeful-cannoli-b65da1.netlify.app/"
           target="_blank"

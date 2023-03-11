@@ -40,6 +40,13 @@ h1 {
   font-size: 24px;
 }
 
+.loading {
+  margin-top: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 0px;
+}
+
 button {
   border-radius: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -82,38 +89,55 @@ h1::first-letter {
   }
 
   .forcast {
-    font-size: 20px;
+    font-size: 18px;
   }
   .search-form {
-    margin-left: 10px;
+    margin-left: -5px;
   }
   .input {
-    width: 130px;
+    width: 100px;
+    padding: 5px;
   }
 
   .search-input {
-    margin-left: 60px;
+    margin-left: 30px;
+    padding: 5px;
+    padding-right: 50px;
   }
 
   .forcast-toggle {
     padding-left: 50px;
+    margin-left: -10px;
   }
 
   .unit-toggle {
-    padding: 0px;
+    padding: 2px;
     font-size: 15px;
-    margin-left: 0px;
+    margin-left: -40px;
     margin-right: 0px;
   }
   .current-temp {
     font-size: 24px;
-    margin-left: -20px;
+    margin-right: -10px;
+    margin-left: -30px;
   }
+
   .current-date {
-    font-size: 20px;
+    font-size: 18px;
+    margin-right: -20px;
+  }
+
+  .current-description {
+    font-size: 18px;
   }
 
   ul {
     margin-top: 20px;
+    margin-left: -50px;
+    font-size: 15px;
+  }
+  h1 {
+    margin-left: -20px;
+    font-size: 24px;
   }
 }
