@@ -42,8 +42,8 @@ export default function App(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="App">
-        <div className="Container app-body mt-5 pt-5 pb-5  ps-5 me-5 pe-5">
+      <div className="App app-body">
+        <div className="container  mt-5 pt-5 pb-5  ps-5 me-5 pe-5">
           <div>
             <SearchData data={weatherData} />
           </div>

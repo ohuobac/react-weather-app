@@ -19,7 +19,7 @@ root.render(
         >
           Open-source code{" "}
         </a>{" "}
-        <span className="text-dark">by Chika Ohuoba</span>{" "}
+        <span className="author-name">by Chika Ohuoba</span>{" "}
         <a
           href="https://gleeful-cannoli-b65da1.netlify.app/"
           target="_blank"
