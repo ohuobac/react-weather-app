@@ -52,7 +52,7 @@ export default function SearchData(props) {
       </div>
 
       <div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between mt-5">
           <h1>
             {props.data.city}, {props.data.country}
           </h1>

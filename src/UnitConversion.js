@@ -23,11 +23,11 @@ export default function UnitConversion(props) {
       <div>
         <span>{Math.round(props.celcius)}°</span>
 
-        <button className=" unit-toggle btn btn-primary">
+        <button className="unit-toggle btn btn-primary">
           <span>°C |</span>{" "}
           <a
             href="/"
-            className=" unit-color link fw-bold"
+            className="unit-color link fw-bold"
             onClick={showFahrenheit}
           >
             °F

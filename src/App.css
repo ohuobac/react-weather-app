@@ -14,6 +14,34 @@ h1 {
   text-align: left;
 }
 
+button {
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  text-transform: capitalize;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+h1::first-letter {
+  text-transform: capitalize;
+}
+
 .App {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -49,38 +77,21 @@ h1 {
   margin-bottom: 0px;
 }
 
-button {
-  border-radius: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-  margin-bottom: 70px;
-}
-
-a {
-  text-decoration: none;
-}
-
-input {
-  text-transform: capitalize;
-}
-
-li::first-letter {
-  text-transform: capitalize;
-}
-
-h1::first-letter {
-  text-transform: capitalize;
-}
-
 @media (max-width: 800px) {
   body {
     height: 110vh;
   }
+
+  ul {
+    margin-top: 20px;
+    margin-left: -60px;
+    font-size: 15px;
+  }
+  h1 {
+    margin-left: -30px;
+    font-size: 24px;
+  }
+
   .app-body {
     margin-left: 15px;
     margin-right: 15px;
@@ -103,18 +114,13 @@ h1::first-letter {
   }
 
   .search-input {
-    margin-left: 30px;
+    margin-left: 0px;
     padding: 5px;
     padding-right: 50px;
   }
 
-  .forcast-toggle {
-    padding-left: 50px;
-    margin-left: -10px;
-  }
-
   .unit-toggle {
-    padding: 2px;
+    padding: 10px;
     font-size: 15px;
     margin-left: -40px;
     margin-right: 0px;
@@ -132,15 +138,5 @@ h1::first-letter {
 
   .current-description {
     font-size: 18px;
-  }
-
-  ul {
-    margin-top: 20px;
-    margin-left: -60px;
-    font-size: 15px;
-  }
-  h1 {
-    margin-left: -30px;
-    font-size: 24px;
   }
 }

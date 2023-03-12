@@ -72,8 +72,9 @@
   font-size: 24px;
 }
 
-.link {
+.link:hover {
   text-align: right;
+  color: #ffcd6b;
 }
 
 .icon-class {

@@ -44,13 +44,7 @@ export default function App(props) {
     return (
       <div className="App app-body">
         <div className="container  mt-5 pt-5 pb-5  ps-5 me-5 pe-5">
-          <div>
-            <SearchData data={weatherData} />
-          </div>
-          <div className="d-flex justify-content-between">
-            <div>
-              <UnitConversion celcius={weatherData.temperature} />
-            </div>
+          <div className="mb-3 mt-0 pt-0">
             <form className="row g-3 form search-form" onSubmit={handleSubmit}>
               <div className="col-6">
                 <input
@@ -66,12 +60,25 @@ export default function App(props) {
                 <input
                   type="submit"
                   value="Search"
-                  className=" search-input form-control btn btn-primary shadow-sm w-50"
+                  className="search-input form-control btn btn-primary shadow-sm w-50"
                 />
               </div>
             </form>
+          </div>
+          <div>
+            <SearchData data={weatherData} />
+          </div>
+          <div className="d-flex justify-content-between">
+            <div>
+              <UnitConversion celcius={weatherData.temperature} />
+            </div>
 
-            <span className="forcast-toggle">Forcast toggle</span>
+            <button type="button" className="btn btn-primary">
+              <a href="/" className="unit-color link fw-bold">
+                Daily
+              </a>{" "}
+              <span className="fw-bold">| Hourly</span>
+            </button>
           </div>
         </div>
       </div>
