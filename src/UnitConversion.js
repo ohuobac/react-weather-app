@@ -18,7 +18,20 @@ export default function UnitConversion(props) {
     return (props.celcius * 9) / 5 + 32;
   }
 
-  if (unit === "celcius") {
+  if (unit === "fahrenheit") {
+    return (
+      <div>
+        <span>{Math.round(fahrenheit())}°</span>
+
+        <button className="unit-toggle btn btn-primary">
+          <a href="/" className="unit-color link fw-bold" onClick={showCelcius}>
+            °C{" "}
+          </a>
+          <span>| °F</span>
+        </button>
+      </div>
+    );
+  } else {
     return (
       <div>
         <span>{Math.round(props.celcius)}°</span>
@@ -32,19 +45,6 @@ export default function UnitConversion(props) {
           >
             °F
           </a>
-        </button>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <span>{Math.round(fahrenheit())}°</span>
-
-        <button className="unit-toggle btn btn-primary">
-          <a href="/" className="unit-color link fw-bold" onClick={showCelcius}>
-            °C{" "}
-          </a>
-          <span>| °F</span>
         </button>
       </div>
     );
