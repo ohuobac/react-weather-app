@@ -13,6 +13,7 @@ export default function App(props) {
   function showResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
@@ -42,45 +43,79 @@ export default function App(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="App app-body">
-        <div className="container  mt-5 pt-5 pb-5  ps-5 me-5 pe-5">
-          <div className="mb-3 mt-0 pt-0">
-            <form className="row g-3 form search-form" onSubmit={handleSubmit}>
-              <div className="col-6">
-                <input
-                  type="search"
-                  className="form-control shadow-sm w-200 input"
-                  placeholder="Enter city"
-                  autofocus="on"
-                  autocomplete="off"
-                  onChange={updateCity}
-                />
-              </div>
-              <div className="col-6">
-                <input
-                  type="submit"
-                  value="Search"
-                  className="search-input form-control btn btn-primary shadow-sm w-50"
-                />
-              </div>
-            </form>
-          </div>
-          <div>
-            <SearchData data={weatherData} />
-          </div>
-          <div className="d-flex justify-content-between">
-            <div>
-              <UnitConversion celcius={weatherData.temperature} />
+      <div>
+        <div className="App app-body">
+          <div className="container  mt-5 pt-5 pb-5  ps-5 me-5 pe-5">
+            <div className="mb-3 mt-0 pt-0">
+              <form
+                className="row g-3 form search-form"
+                onSubmit={handleSubmit}
+              >
+                <div className="col-6">
+                  <input
+                    type="search"
+                    className="form-control shadow-sm w-200 input"
+                    placeholder="Enter city"
+                    autofocus="on"
+                    autocomplete="off"
+                    onChange={updateCity}
+                  />
+                </div>
+                <div className="col-6">
+                  <input
+                    type="submit"
+                    value="Search"
+                    className="search-input form-control btn btn-primary shadow-sm w-50"
+                  />
+                </div>
+              </form>
             </div>
+            <div>
+              <SearchData data={weatherData} />
+            </div>
+            <div className="d-flex justify-content-between mt-0 pt-0">
+              <div>
+                <UnitConversion celcius={weatherData.temperature} />
+              </div>
 
-            <button type="button" className="btn btn-primary">
-              <a href="/" className="unit-color link fw-bold">
-                Daily
-              </a>{" "}
-              <span className="fw-bold">| Hourly</span>
-            </button>
+              <button type="button" className="btn btn-primary">
+                <a href="/" className="unit-color link fw-bold">
+                  Daily
+                </a>{" "}
+                <span className="fw-bold">| Hourly</span>
+              </button>
+            </div>
           </div>
         </div>
+        <footer className="link text-center mb-0 pb-0 mt-0 pt-0">
+          <small className="weather-app-wrapper mb-0 pb-0 mt-0 pt-0">
+            <a
+              href="https://github.com/ohuobac/react-weather-app"
+              target="_blank"
+              rel="noreferrer"
+              text-decoration="none"
+            >
+              Open-source code{" "}
+            </a>{" "}
+            <a
+              href="https://www.linkedin.com/in/ohuoba-chika-79b942121/"
+              target="_blank"
+              rel="noreferrer"
+              text-decoration="none"
+              className="author-name"
+            >
+              by Chika Ohuoba
+            </a>{" "}
+            <a
+              href="https://gleeful-cannoli-b65da1.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              text-decoration="none"
+            >
+              Hosted on Netlify
+            </a>
+          </small>
+        </footer>
       </div>
     );
   } else {

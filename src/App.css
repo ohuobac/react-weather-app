@@ -1,6 +1,7 @@
 body {
   color: aliceblue;
-  background: center/200% url("https://source.unsplash.com/1600x900/?weather");
+  background: center/200%
+    url("https://source.unsplash.com/1600x900/?dark,weather");
   backdrop-filter: blur(10px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +52,8 @@ h1::first-letter {
 .app-body {
   border: 2px solid aliceblue;
   border-radius: 10px;
-  background: center/200% url("https://source.unsplash.com/1600x900/?weather");
+  background: center/200%
+    url("https://source.unsplash.com/1600x900/?dark,weather");
   background-size: cover;
   max-width: 800px;
   display: block;
@@ -59,15 +61,16 @@ h1::first-letter {
   padding: auto;
 }
 
-.forcast-border {
-  border-left: 1px solid aliceblue;
-}
-
 .forcast {
-  margin-bottom: 80px;
+  align-items: center;
+  margin-bottom: 60px;
   margin-top: 10px;
   color: #ffcd6b;
   font-size: 24px;
+}
+
+.forcast-border {
+  margin: 10px;
 }
 
 .loading {
@@ -75,6 +78,10 @@ h1::first-letter {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 0px;
+}
+
+.search-form {
+  padding-top: -2px;
 }
 
 @media (max-width: 800px) {
@@ -96,14 +103,13 @@ h1::first-letter {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .forcast-border {
-    border-left: 0px solid aliceblue;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
 
   .forcast {
     font-size: 18px;
+  }
+
+  .forcast-border {
+    margin: 10px;
   }
   .search-form {
     margin-left: -5px;
@@ -127,7 +133,6 @@ h1::first-letter {
   }
   .current-temp {
     font-size: 24px;
-    margin-right: -10px;
     margin-left: -30px;
   }
 

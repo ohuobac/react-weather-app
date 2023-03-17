@@ -3,6 +3,7 @@ import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
 import "./weather.css";
 import "./App.css";
+import Forcast from "./Forcast";
 
 export default function SearchData(props) {
   return (
@@ -17,42 +18,11 @@ export default function SearchData(props) {
             {props.data.description}
           </span>
         </div>
-
-        <div className="forcast-border"></div>
-        <div>
-          Mon <br /> icon
-          <br />
-          36<span>°</span>
-        </div>
-        <div className="forcast-border"></div>
-        <div>
-          Tue <br /> icon
-          <br />
-          37°
-        </div>
-        <div className="forcast-border"></div>
-
-        <div>
-          Wed <br /> icon
-          <br />
-          36°
-        </div>
-        <div className="forcast-border"></div>
-        <div>
-          Thur <br /> icon
-          <br />
-          36°
-        </div>
-        <div className="forcast-border"></div>
-        <div>
-          Fri <br /> icon
-          <br />
-          37°
-        </div>
+        <Forcast coordinates={props.data.coordinates} />
       </div>
 
-      <div>
-        <div className="d-flex justify-content-between mt-5">
+      <div className="mt-0 pt-0">
+        <div className="d-flex justify-content-between mt-0 pt-0">
           <h1>
             {props.data.city}, {props.data.country}
           </h1>
@@ -62,7 +32,7 @@ export default function SearchData(props) {
           </span>
         </div>
 
-        <ul>
+        <ul className="mb-3 pb-2">
           <li>
             Humidity <span className="ms-4 ps-5">{props.data.humidity}%</span>
           </li>
