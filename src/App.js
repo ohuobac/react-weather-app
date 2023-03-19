@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import SearchData from "./SearchData";
-import UnitConversion from "./UnitConversion";
 import Loading from "./Loading";
 import "./App.css";
-import "./weather.css";
 
 export default function App(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -72,18 +70,6 @@ export default function App(props) {
             </div>
             <div>
               <SearchData data={weatherData} />
-            </div>
-            <div className="d-flex justify-content-between mt-0 pt-0">
-              <div>
-                <UnitConversion celcius={weatherData.temperature} />
-              </div>
-
-              <button type="button" className="btn btn-primary">
-                <a href="/" className="unit-color link fw-bold">
-                  Daily
-                </a>{" "}
-                <span className="fw-bold">| Hourly</span>
-              </button>
             </div>
           </div>
         </div>

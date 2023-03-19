@@ -61,6 +61,30 @@ h1::first-letter {
   padding: auto;
 }
 
+.author-name {
+  color: #ffcd6b;
+}
+
+.units {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 20px;
+  padding-left: 0px;
+  vertical-align: top;
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+.current-temp {
+  text-align: left;
+  font-weight: 700px;
+  font-size: 36px;
+}
+.current-description {
+  font-size: 24px;
+}
+
 .forcast {
   align-items: center;
   margin-bottom: 60px;
@@ -105,11 +129,12 @@ h1::first-letter {
   }
 
   .forcast {
-    font-size: 18px;
+    font-size: 20px;
+    margin-right: -20px;
   }
 
   .forcast-border {
-    margin: 10px;
+    margin: 5px;
   }
   .search-form {
     margin-left: -5px;
@@ -132,8 +157,9 @@ h1::first-letter {
     margin-right: 0px;
   }
   .current-temp {
-    font-size: 24px;
+    font-size: 30px;
     margin-left: -30px;
+    margin-right: 30px;
   }
 
   .current-date {
@@ -142,6 +168,11 @@ h1::first-letter {
   }
 
   .current-description {
-    font-size: 18px;
+    font-size: 24px;
+  }
+
+  .units {
+    font-size: 24px;
+    margin-top: 8px;
   }
 }
